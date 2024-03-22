@@ -1,0 +1,10 @@
+/Users/brandonrobb/Documents/CPSC-3280/M2/M2 Programing Assignment/tree_insert_rust/target/debug/deps/libbinary_tree-792b5f2e46c2859d.rmeta: /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/lib.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/cow.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/count.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/iter.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/test.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/unbox.rs
+
+/Users/brandonrobb/Documents/CPSC-3280/M2/M2 Programing Assignment/tree_insert_rust/target/debug/deps/binary_tree-792b5f2e46c2859d.d: /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/lib.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/cow.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/count.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/iter.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/test.rs /Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/unbox.rs
+
+/Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/lib.rs:
+/Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/cow.rs:
+/Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/count.rs:
+/Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/iter.rs:
+/Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/test.rs:
+/Users/brandonrobb/.cargo/registry/src/index.crates.io-6f17d22bba15001f/binary-tree-0.2.0/src/unbox.rs:
