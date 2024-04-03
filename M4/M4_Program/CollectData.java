@@ -78,7 +78,7 @@ public class CollectData {
                 writer.printf("%s: %s\n", entry.getKey(), reconstructPath(predecessors, entry.getKey()));
             }
         }
-        System.out.println("Output written to output.txt");
+        System.out.println("Output written to outputShortestPaths.txt.");
     }
 
     private static String reconstructPath(Map<Character, Character> predecessors, char target) {
