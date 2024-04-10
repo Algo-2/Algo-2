@@ -2,53 +2,53 @@ import java.util.Arrays;
 
 public class RodCuttingCutTracking {
 
-    public static int cutRod(int[] prices, int length) {
-        int[] memo = new int[length + 1];
-        int[] cuts = new int[length + 1]; // This array will track the cuts
+    public static int cutRod(int[] p, int n) {
+        int[] memo = new int[n + 1];
+        int[] cuts = new int[n + 1]; // This array will track the cuts
         Arrays.fill(memo, -1);
-        int maxRevenue = cutRodHelper(prices, length, memo, cuts);
+        int maxRevenue = cutRodHelper(p, n, memo, cuts);
 
-        // Backtracking to find the cuts
-        int n = length;
-        System.out.print("Cuts made at lengths: ");
-        while (n > 0) {
-            System.out.print(cuts[n] + " ");
-            n -= cuts[n]; // Move to the next piece
+        if (maxRevenue > p[n]) { // This condition checks if making cuts is better than not making any cuts
+            System.out.print("Cuts made to produce lengths: ");
+            while (n > 0) {
+                System.out.print(cuts[n] + " ");
+                n -= cuts[n]; // Move to the next piece
+            }
+        } else {
+            System.out.print("No cuts made ");
         }
-        System.out.println(); // New line for clean output
-
         return maxRevenue;
     }
 
-    private static int cutRodHelper(int[] prices, int length, int[] memo, int[] cuts) {
-        if (length <= 0) {
+    private static int cutRodHelper(int[] p, int n, int[] memo, int[] cuts) {
+        if (n <= 0) {
             return 0;
         }
-        if (memo[length] != -1) {
-            return memo[length];
+        if (memo[n] != -1) {
+            return memo[n];
         }
         int maxRevenue = Integer.MIN_VALUE;
-        for (int i = 1; i <= length; i++) {
-            int revenue = prices[i] + cutRodHelper(prices, length - i, memo, cuts);
+        for (int i = 1; i <= n; i++) {
+            int revenue = p[i] + cutRodHelper(p, n - i, memo, cuts);
             if (revenue > maxRevenue) {
                 maxRevenue = revenue;
-                cuts[length] = i; // Record this cut as it leads to max revenue
+                cuts[n] = i; // Record this cut as it leads to max revenue
             }
         }
-        memo[length] = maxRevenue;
+        memo[n] = maxRevenue;
         return maxRevenue;
     }
 
     public static void main(String[] args) {
-        int[] prices = { 0, 1, 5, 8, 10, 13, 17, 18, 22, 25, 30 };
-        int length = 9;
+        int[] p = { 0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30 };
+        int n = 9;
         int maxRevenue = 0;
-        for (int i = 0; i < length; i++) {
-            maxRevenue = cutRod(prices, i);
-            System.out.println("Maximum revenue: " + maxRevenue);
+        for (int i = 0; i < n; i++) {
+            maxRevenue = cutRod(p, i);
+            System.out.println("and Maximum revenue: " + maxRevenue);
 
         }
-        // int maxRevenue = cutRod(prices, length);
+        // int maxRevenue = cutRod(p, n);
         // System.out.println("Maximum revenue: " + maxRevenue);
     }
 }
