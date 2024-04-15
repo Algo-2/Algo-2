@@ -38,7 +38,5 @@ public class ModifiedRodCutting {
             System.out.println("Maximum revenue: " + maxRevenue);
 
         }
-        // int maxRevenue = cutRod(p, n, c);
-        // System.out.println("Maximum revenue: " + maxRevenue);
     }
 }

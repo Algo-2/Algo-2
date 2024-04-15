@@ -41,14 +41,12 @@ public class RodCuttingCutTracking {
 
     public static void main(String[] args) {
         int[] p = { 0, 1, 5, 8, 9, 10, 17, 17, 20, 24, 30 };
-        int n = 9;
+        int n = 10;
         int maxRevenue = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             maxRevenue = cutRod(p, i);
             System.out.println("and Maximum revenue: " + maxRevenue);
 
         }
-        // int maxRevenue = cutRod(p, n);
-        // System.out.println("Maximum revenue: " + maxRevenue);
     }
 }
